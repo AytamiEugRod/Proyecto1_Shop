@@ -67,7 +67,8 @@ header div#menu ul li:hover a:hover{
 main{
     width: 100%;
     /* height: calc(100vh - 100px - 60px); */
-    height: 100%;
+    /* height: 100%; */
+    height: calc(100vh - 60px);
     /* margin-top: 100px; */
     /* padding-top: 8%; */
 
@@ -79,7 +80,7 @@ main section.container{
     width: 100%;
     height: 100%;
 
-    overflow-y: auto;
+    /* overflow-y: auto; */
 }
 main section.container div.banner-principal{
     width: 100%;
@@ -158,6 +159,13 @@ main section.container div.content div.list-products div.card-producto div.foote
 main section.container div.content div.list-products div.card-producto div.footer-card-producto a:active{
     transform: scale(1);
 }
+main section.container div.banner-end{
+    width: 100%;
+    height: 50vh;
+    /* padding-top: 8%; */
+    background-image: url(/assets/main/banner4.png);
+    background-size: contain;
+}
 
 
 
@@ -198,8 +206,23 @@ footer{
 
     display: flex;
     align-items: center;
-    justify-content: center;
+
+    justify-content: space-between;
+    padding: 0 20px;
 }
-footer h3{
-    margin: 0;
+footer a{
+    color: #fff;
+    text-decoration: none;
+}
+footer div.links{
+    display: flex;
+    gap: 10px;
+}
+footer div.links a{
+    color: #FFF;
+    font-size: 14px;
+    text-decoration: none;
+}
+footer div.links a:hover{
+    text-decoration: underline;
 }
