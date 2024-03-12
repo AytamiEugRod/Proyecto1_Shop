@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- CSS -->
     <link rel="stylesheet" href="./style/index.css">
+    <!-- SCRIPT -->
+    <script defer src="./src/index.js"></script>
 
     <title>Vegan Shop</title>
 
 
 </head>
+
 <body>
     <header>
         <div id="logo">
@@ -21,14 +26,18 @@
         <div id="menu">
             <ul>
                 <li><a href="./pages/home/home.html" target="iframe-content">Inicio</a></li>
-                <li><a href="./pages/shop/shop.html" target="iframe-content">Productos</a></li>
+                <li><a href="./pages/shop/shop.html" target="iframe-content" id="productos">Productos</a></li>
                 <li><a href="./pages/about/about.html" target="iframe-content">Nosotros</a></li>
                 <li><a href="./pages/contact/contact.html" target="iframe-content">Contacto</a></li>
-            </ul> 
+            </ul>
         </div>
-        
+
+        <div id="carro-compra">
+            <span>0</span>
+            <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+        </div>
     </header>
-    
+
     <main>
         <section class="container">
 
@@ -126,4 +135,5 @@
         </div>
     </footer>
 </body>
+
 </html>
