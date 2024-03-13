@@ -65,7 +65,8 @@ div#shop div.content div.list-products div.product-card{
     justify-content: space-between;
 }
 div#shop div.content div.list-products div.product-card:hover{
-    box-shadow: 5px 5px 10px #114232;
+    box-shadow: 5px 5px 10px #675815;
+    /* box-shadow: 5px 5px 10px #114232; */
     transform: translate(-5px, -5px);
 }
 div#shop div.content div.list-products div.product-card div.img-product-card{
