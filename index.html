@@ -1,42 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- CSS -->
     <link rel="stylesheet" href="./style/index.css">
+    <!-- SCRIPT -->
+    <script defer src="./src/index.js"></script>
 
     <title>Vegan Shop</title>
+
+
 </head>
+
 <body>
     <header>
         <div id="logo">
             <img src="./assets/header/logo.webp" alt="logo">
         </div>
 
-        <h1>Header</h1>
-        
-    </header>
-    
-    <main>
-        <aside>
-            <h3>Menu</h3>
+        <div id="menu">
             <ul>
-                <li><a href="">Enlace1</a></li>
-                <li><a href="">Enlace1</a></li>
-                <li><a href="">Enlace1</a></li>
-                <li><a href="">Enlace1</a></li>
-            </ul> 
-        </aside>
-        <section class="content">
-            <p>Contenido</p>
+                <li><a href="./pages/home/home.html" target="iframe-content">Inicio</a></li>
+                <li><a href="./pages/shop/shop.html" target="iframe-content" id="productos">Productos</a></li>
+                <li><a href="./pages/about/about.html" target="iframe-content">Nosotros</a></li>
+                <li><a href="./pages/contact/contact.html" target="iframe-content">Contacto</a></li>
+            </ul>
+        </div>
+
+        <div id="carro-compra">
+            <span>0</span>
+            <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+        </div>
+    </header>
+
+    <main>
+        <section class="container">
+
+            <!-- En esta parte utilizaremos iframe-->
+            <iframe src="./pages/home/home.html" name="iframe-content" frameborder="0" height="100%" width="100%" title="Content"></iframe>
+
+            <!-- 
+            <div class="banner-principal">
+                <h1>Inicio</h1>
+            </div>
+            <div class="content">
+                <div class="descripcion">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit aliquid eveniet repellat odio adipisci laudantium molestiae earum, amet iste. Eum accusamus suscipit ullam reiciendis culpa, dolore, aspernatur iusto ea illo non itaque error neque tempore mollitia cupiditate tempora laudantium excepturi molestias maxime recusandae commodi ipsam hic nobis. At, aliquid maiores!</p>
+                </div>
+                <div class="list-products">
+                    <div class="card-producto">
+                        <div class="img-card-producto">
+                            <img src="./assets/main/banner4.png" alt="">
+                        </div>
+                        <div class="info-card-producto">
+                            <h3>Nombre producto</h3>
+                            <p>Descripción</p>
+                            
+                        </div>
+                        <div class="footer-card-producto">
+                            <a href="">Ver más</a>
+                        </div>
+                    </div>
+                    <div class="card-producto">
+                        <div class="img-card-producto">
+                            <img src="./assets/main/banner4.png" alt="">
+                        </div>
+                        <div class="info-card-producto">
+                            <h3>Nombre producto</h3>
+                            <p>Descripción</p>
+                            
+                        </div>
+                        <div class="footer-card-producto">
+                            <a href="">Ver más</a>
+                        </div>
+                    </div>
+                    <div class="card-producto">
+                        <div class="img-card-producto">
+                            <img src="./assets/main/banner4.png" alt="">
+                        </div>
+                        <div class="info-card-producto">
+                            <h3>Nombre producto</h3>
+                            <p>Descripción</p>
+                            
+                        </div>
+                        <div class="footer-card-producto">
+                            <a href="">Ver más</a>
+                        </div>
+                    </div>
+                    <div class="card-producto">
+                        <div class="img-card-producto">
+                            <img src="./assets/main/banner4.png" alt="">
+                        </div>
+                        <div class="info-card-producto">
+                            <h3>Nombre producto</h3>
+                            <p>Descripción</p>
+                            
+                        </div>
+                        <div class="footer-card-producto">
+                            <a href="">Ver más</a>
+                        </div>
+                    </div>
+                    <div class="card-producto">
+                        <div class="img-card-producto">
+                            <img src="./assets/main/banner4.png" alt="">
+                        </div>
+                        <div class="info-card-producto">
+                            <h3>Nombre producto</h3>
+                            <p>Descripción</p>
+                            
+                        </div>
+                        <div class="footer-card-producto">
+                            <a href="">Ver más</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-end">
+
+            </div>
+            -->
         </section>
-        <!-- En esta parte utilizaremos iframe-->
     </main>
     <footer>
-        <h3>Footer</h3>
+        <p>© 2024 Shop Vegan - <a href="https://github.com/naydy">Sebastian</a> | <a href="https://github.com/yeraki">Yeraki</a> | <a href="https://github.com/AytamiEugRod">Aytami</a></p>
+        <div class="links">
+            <a href="">Políticas de privacidad</a>
+            <a href="">Terminos de uso</a>
+            <a href="">Contactanos</a>
+        </div>
     </footer>
 </body>
+
 </html>

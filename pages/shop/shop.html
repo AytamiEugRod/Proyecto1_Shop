@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/style/shop/shop.css">
+
+    <script defer src="/src/shop.js"></script>
+
+    <title>Document</title>
+
+</head>
+<body>
+    <div id="shop">
+
+        <div class="banner-principal">
+            <h1>Tienda</h1>
+        </div>
+        <div class="content">
+            <div class="descripcion">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit aliquid eveniet repellat odio adipisci laudantium molestiae earum, amet iste. Eum accusamus suscipit ullam reiciendis culpa, dolore, aspernatur iusto ea illo non itaque error neque tempore mollitia cupiditate tempora laudantium excepturi molestias maxime recusandae commodi ipsam hic nobis. At, aliquid maiores!</p>
+            </div>
+
+            <!--
+            <div class="list-products">
+                <div class="card-producto">
+                    <div class="img-card-producto">
+                        <img src="/assets/main/banner4.png" alt="">
+                    </div>
+                    <div class="info-card-producto">
+                        <h3>Nombre producto</h3>
+                        <p>Descripción</p>
+                        
+                    </div>
+                    <div class="footer-card-producto">
+                        <a href="">Ver más</a>
+                    </div>
+                </div>
+                <div class="card-producto">
+                    <div class="img-card-producto">
+                        <img src="/assets/main/banner4.png" alt="">
+                    </div>
+                    <div class="info-card-producto">
+                        <h3>Nombre producto</h3>
+                        <p>Descripción</p>
+                        
+                    </div>
+                    <div class="footer-card-producto">
+                        <a href="">Ver más</a>
+                    </div>
+                </div>
+                <div class="card-producto">
+                    <div class="img-card-producto">
+                        <img src="/assets/main/banner4.png" alt="">
+                    </div>
+                    <div class="info-card-producto">
+                        <h3>Nombre producto</h3>
+                        <p>Descripción</p>
+                        
+                    </div>
+                    <div class="footer-card-producto">
+                        <a href="">Ver más</a>
+                    </div>
+                </div>
+                <div class="card-producto">
+                    <div class="img-card-producto">
+                        <img src="/assets/main/banner4.png" alt="">
+                    </div>
+                    <div class="info-card-producto">
+                        <h3>Nombre producto</h3>
+                        <p>Descripción</p>
+                        
+                    </div>
+                    <div class="footer-card-producto">
+                        <a href="">Ver más</a>
+                    </div>
+                </div>
+                <div class="card-producto">
+                    <div class="img-card-producto">
+                        <img src="/assets/main/banner4.png" alt="">
+                    </div>
+                    <div class="info-card-producto">
+                        <h3>Nombre producto</h3>
+                        <p>Descripción</p>
+                        
+                    </div>
+                    <div class="footer-card-producto">
+                        <a href="">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            -->
+
+            
+            <div class="list-products"></div>
+
+            <div id="moval-cart" class="desactivo">
+                <div id="background-cart"></div>
+                <div class="cart">
+                    <div class="cart-header">
+                        <h3>Carro</h3>
+                        <!-- <p class="noOfItems">0 items</p> -->
+                    </div>
+                    <!-- <hr noshade="true" size="1px" /> -->
+                    <div class="cart-items"></div>
+                    <!-- <hr noshade="true" size="1px" /> -->
+                    <div class="cart-footer cart-header">
+                        <p><strong>Total</strong> <span class="total">0€</span></p>
+                        
+                    </div>
+
+                    <form name="from" action="https://sis-t.redsys.es:25443/sis/realizarPago" method="POST" target="_blank">
+                        <input type="hidden" name="Ds_SignatureVersion" value="HMAC_SHA256_V1"/>
+                        <input type="hidden" name="Ds_MerchantParameters" value="
+                            eyJEU19NRVJDSEFOVF9BTU9VTlQiOiAiMTQ1IiwiRFNfTUVSQ0hBTlRfQ1VSUkVOQ1kiOiAiOTc4IiwiRFNfTUVSQ0hBTlRfTUVSQ0hBTlRDT0RFIjogIjk5OTAwODg4MSIsIkRTX01FUkNIQU5UX01FUkNIQU5UVVJMIjogImh0dHA6Ly93d3cucHJ1ZWJhLmNvbS91cmxOb3RpZmljYWNpb24ucGhwIiwiRFNfTUVSQ0hBTlRfT1JERVIiOiAiMTQ0NjA2ODU4MSIsIkRTX01FUkNIQU5UX1RFUk1JTkFMIjogIjEiLCJEU19NRVJDSEFOVF9UUkFOU0FDVElPTlRZUEUiOiAiMCIsIkRTX01FUkNIQU5UX1VSTEtPIjogImh0dHA6Ly93d3cucHJ1ZWJhLmNvbS91cmxLTy5waHAiLCJEU19NRVJDSEFOVF9VUkxPSyI6ICJodHRwOi8vd3d3LnBydWViYS5jb20vdXJsT0sucGhwIn0="/>
+                        <input type="hidden" name="Ds_Signature" value="PqV2+SF6asdasMjXasKJRTh3UIYya1hmU/igHkzhC+R="/>	
+
+                        <button class="buy-btn">Comprar</button>
+                    </form>
+                </div>
+            </div>
+            
+            
+        </div>
+        <div class="banner-end">
+            <div id="ubicacion-mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1511.9854477020538!2d-73.999057!3d40.71865719999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25989c2eefc67%3A0x82c42cfab57cda11!2sLily&#39;s%20Vegan%20Pantry!5e0!3m2!1ses!2ses!4v1710194930229!5m2!1ses!2ses" 
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div id="redes-sociales">
+                <a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a>
+                <a href="https://twitter.com/?lang=es"><i class="fa fa-twitter" aria-hidden="true"></i> Twiter</a>
+                <a href="https://www.facebook.com/?locale=es_ES"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a>
+            </div>
+        </div>
+    
+    </div>
+</body>
+</html>
