@@ -13,11 +13,9 @@ window.onload = function(){
     // 
     document.querySelectorAll("header div#menu a").forEach(element => {
         element.addEventListener("click", function(event){
-
             if(document.querySelector("header div#menu a.enlace-activo")){
                 document.querySelector("header div#menu a.enlace-activo").classList.remove('enlace-activo');
             }
-            console.log(element);
             element.classList.add('enlace-activo');
         })
     });

@@ -55,16 +55,22 @@ header div#menu ul li:hover{
     transform: scale(1.2);
 }
 header div#menu ul li a{
-    color: #114232;
+    /* color: #114232; */
+    color: #000;
     text-decoration: none;
     /* font-size: 22px; */
 }
 header div#menu ul li:hover a:hover{
-    color: #7fcc2b;
+    /* color: #7fcc2b; */
+    /* color: #406329; */
+    color: #c6ac36;
     /* text-decoration: underline; */
 }
 header div#menu ul li a.enlace-activo{
-    color: #7fcc2b;
+    /* color: #7fcc2b; */
+    /* color: #406329; */
+    color: #c6ac36;
+
 }
 
 header div#carro-compra{

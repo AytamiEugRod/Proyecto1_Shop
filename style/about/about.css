@@ -26,8 +26,11 @@ div#about div.banner-principal {
     height: 60vh;
 
     padding-top: 8%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("/assets/main/banner3.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("/assets/main/banner5.png");
     color: #FFF;
+
+    background-size: cover;
+    background-position: bottom;
 
     display: flex;
     align-items: center;
@@ -44,11 +47,6 @@ div#about div.content {
 div#about div.content div.descripcion {
     padding: 50px 10%;
     font-size: 20px;
-}
-
-div#about div.content div.descripcion ul {
-    text-align: left;
-    margin: 60px 0;
 }
 
 div#about div.content div.descript-product {
