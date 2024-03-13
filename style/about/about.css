@@ -206,10 +206,22 @@ div#about div.banner-end div#redes-sociales a {
     }
 }
 
+div#imgTeam{
+    display: flex;
+}
+
 div#imgTeam img {
     border-radius: 50%;
-    width: 10%;
+    width: 30%;
     margin-right: 50px;
+    filter: grayscale(100%);
+    display: flex;
+    
+}
+
+div#imgTeam img:hover{
+    filter: grayscale(0%);
+
 }
 
 .animate {
