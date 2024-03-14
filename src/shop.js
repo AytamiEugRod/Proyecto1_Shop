@@ -18,30 +18,36 @@ const products = [
     { name: "Garden Alitas de Pollo", price: 3.45, id: 2, quantity: 1, description: "Alitas de pollo basadas en vegetales", image: "/assets/shop/alitas.webp" },
     { name: "Beyond Beef Carne picada", price: 4.85, id: 3, quantity: 1, description: "Preparado estilo carne picada y sabor medio/intenso", image: "/assets/shop/carne.webp" },
     { name: "WholeSome lágrimas de carne", price: 6.05, id: 4, quantity: 1, description: "JustLikeBeef Preparado de judías imitando lágrimas de carne", image: "/assets/shop/carne2.webp" },
-    { name: "Quorn Filete de carne", price: 5.49, id: 4, quantity: 1, description: "2 unidades de filetes proteína de soja y espesantes", image: "/assets/shop/carne3.webp" },
-    { name: "GardeIn Tiras de pollo", price: 3.99, id: 4, quantity: 1, description: "Proteína de soja y vegetales imitando tiras de pollo, con salsa", image: "/assets/shop/chicken.webp" },
-    { name: "Morrisons Tacos de pollo", price: 4.99, id: 4, quantity: 1, description: "Tacos de soja marinados con hierbas y especies ", image: "/assets/shop/chicken3.webp" },
-    { name: "Frys Nuggets de pollo", price: 1.99, id: 4, quantity: 1, description: "Proteína vegetal y soja rebozadas imitando nuggets", image: "/assets/shop/nuggets.webp" },
-    { name: "Quorn Nuggets de pollo", price: 2.39, id: 4, quantity: 1, description: "Proteína vegetal y soja rebozadas imitando nuggets", image: "/assets/shop/nuggets3.webp" },
-    { name: "SweetEarth Salchichas pollo", price: 0.99, id: 4, quantity: 1, description: "Proteína soja con manzana imitando salchichas", image: "/assets/shop/sausages.webp" },
-    { name: "GardeIn delicias de pollo", price: 1.99, id: 4, quantity: 1, description: "Proteína vegetal y soja rebozadas imitando delicias de pollo", image: "/assets/shop/alitas.webp" }
+    { name: "Quorn Filete de carne", price: 5.49, id: 5, quantity: 1, description: "2 unidades de filetes proteína de soja y espesantes", image: "/assets/shop/carne3.webp" },
+    { name: "GardeIn Tiras de pollo", price: 3.99, id: 6, quantity: 1, description: "Proteína de soja y vegetales imitando tiras de pollo, con salsa", image: "/assets/shop/chicken.webp" },
+    { name: "Morrisons Tacos de pollo", price: 4.99, id: 7, quantity: 1, description: "Tacos de soja marinados con hierbas y especies ", image: "/assets/shop/chicken3.webp" },
+    { name: "Frys Nuggets de pollo", price: 1.99, id: 8, quantity: 1, description: "Proteína vegetal y soja rebozadas imitando nuggets", image: "/assets/shop/nuggets.webp" },
+    { name: "Quorn Nuggets de pollo", price: 2.39, id: 9, quantity: 1, description: "Proteína vegetal y soja rebozadas imitando nuggets", image: "/assets/shop/nuggets3.webp" },
+    { name: "SweetEarth Salchichas pollo", price: 0.99, id: 10, quantity: 1, description: "Proteína soja con manzana imitando salchichas", image: "/assets/shop/sausages.webp" },
+    { name: "GardeIn delicias de pollo", price: 1.99, id: 11, quantity: 1, description: "Proteína vegetal y soja rebozadas imitando delicias de pollo", image: "/assets/shop/alitas.webp" }
 ]
 let cart = []
 
 const productsHTML = products.map(
-    (product) => `<div class="product-card">
-        <div class="img-product-card">
-            <img src="${product.image}" alt="" >
-        </div>
-        <div class="info-product-card">
-            <h3 class="product-name">${product.name}</h3>
-            <p>${product.description}</p>
-            <p><strong>${product.price}€</strong></p>
-        </div>
-        <div class="footer-product-card">
-            <button class="product-btn" data-id-product=${product.id}>Añadir</button>
-        </div>
-    </div>`
+    (product) => {
+        let desc = product.description;
+        if(desc.length > 50)
+            desc = `${product.description.slice(0, 47)}...`;
+
+        return (`<div class="product-card">
+            <div class="img-product-card">
+                <img src="${product.image}" alt="" >
+            </div>
+            <div class="info-product-card">
+                <h3 class="product-name">${product.name}</h3>
+                <p>${desc}</p>
+                <p><strong>${product.price}€</strong></p>
+            </div>
+            <div class="footer-product-card">
+                <button class="product-btn" data-id-product=${product.id}>Añadir</button>
+            </div>
+        </div>`);
+    }
 );
 const result = document.querySelector(".list-products");
 result.innerHTML = productsHTML.join("");
@@ -123,7 +129,7 @@ function getTotal(cart) {
     numbItemsCarroCompra.innerHTML = `${totalItem}`;
 
     const totalAmountHTML = document.querySelector(".total");
-    totalAmountHTML.innerHTML = `${cartTotal}€`;
+    totalAmountHTML.innerHTML = `${cartTotal.toFixed(2)}€`;
 }
 
 function incrItem(id) {
