@@ -55,14 +55,24 @@ header div#menu ul li:hover{
     transform: scale(1.2);
 }
 header div#menu ul li a{
-    color: #114232;
+    /* color: #114232; */
+    color: #000;
     text-decoration: none;
     /* font-size: 22px; */
 }
 header div#menu ul li:hover a:hover{
-    color: #a4cc2b;
+    /* color: #7fcc2b; */
+    /* color: #406329; */
+    color: #c6ac36;
     /* text-decoration: underline; */
 }
+header div#menu ul li a.enlace-activo{
+    /* color: #7fcc2b; */
+    /* color: #406329; */
+    color: #c6ac36;
+
+}
+
 header div#carro-compra{
     /* height: 100%; */
     width: 85px;
@@ -73,8 +83,13 @@ header div#carro-compra{
 
     display: none;
 
-    position: relative;
+    /* position: relative; */
+    position: absolute;
+    right: 30px;
     cursor: pointer;
+}
+header div#carro-compra:hover i{
+    animation: tiembla 0.2s;
 }
 header div#carro-compra span{
     position: absolute;
@@ -93,6 +108,14 @@ header div#carro-compra span{
     justify-content: center;
 }
 
+@keyframes tiembla{
+    0%  { transform:rotateZ(0deg); }
+    25%  { transform:rotateZ(10deg); }
+    50% { transform:rotateZ( 0deg); }
+    75% { transform:rotateZ( -10deg); }
+    100%{ transform:rotateZ( 0deg); }
+}
+
 main{
     width: 100%;
     /* height: calc(100vh - 100px - 60px); */
@@ -103,7 +126,8 @@ main{
 
     display: flex;
 
-    background-color: #DAF7A6;
+    /* background-color: #DAF7A6; */
+    background-color: rgb(198 172 54 / 50%);
 }
 main section.container{
     width: 100%;

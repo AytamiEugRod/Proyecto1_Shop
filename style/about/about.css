@@ -1,9 +1,11 @@
-html,
-body {
+* {
+    box-sizing: border-box;
+    /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+}
+html,body {
     height: 100%;
     width: 100%;
 }
-
 body {
     margin: 0;
     padding: 0;
@@ -21,13 +23,14 @@ div#about {
 
 div#about div.banner-principal {
     width: 100%;
-    /* height: 70%; */
-    height: 20vh;
+    height: 60vh;
 
     padding-top: 8%;
-    /* background-image: url('/assets/main/banner3.webp'); */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("/assets/main/banner3.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("/assets/main/banner5.png");
     color: #FFF;
+
+    background-size: cover;
+    background-position: bottom;
 
     display: flex;
     align-items: center;
@@ -44,11 +47,6 @@ div#about div.content {
 div#about div.content div.descripcion {
     padding: 50px 10%;
     font-size: 20px;
-}
-
-div#about div.content div.descripcion ul {
-    text-align: left;
-    margin: 60px 0;
 }
 
 div#about div.content div.descript-product {
@@ -78,6 +76,7 @@ div#about div.content div.descript-product.light-descript-product>div.info-produ
 div#about div.content div.descript-product.dark-descript-product {
     background-color: rgb(0 0 0 / 50%);
     padding: 50px 10% 50px 3%;
+    color: #f6f2d6;
 }
 
 div#about div.content div.descript-product.dark-descript-product>div.info-product>p {
@@ -197,13 +196,6 @@ div#about div.banner-end div#redes-sociales a {
     color: #fff;
     font-weight: bold;
     text-decoration: none;
-}
-
-
-@media only screen and (min-width: 1920px) {
-    div#about div.content div.list-products div.card-producto {
-        flex-basis: 23%;
-    }
 }
 
 div#imgTeam{

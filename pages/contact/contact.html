@@ -1,97 +1,72 @@
 
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="./style/index.css">
-    <link rel="stylesheet" href="/style/contact/contact.css" />
-
-
-    <title>Vegan Shop</title>
+    <link rel="stylesheet" href="/style/contact/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="/src/contact.js"></script>
 </head>
 
 <body>
-    <header>
-        <div id="logo">
-            <img src="/assets/header/logo.webp" alt="logo">
+    <div id="box">
+
+        <div class="banner-principal">
+            <h1>Contáctanos</h1>
         </div>
-
-        <div id="menu">
-            <ul>
-                <li><a href="">Enlace1</a></li>
-                <li><a href="">Enlace1</a></li>
-                <li><a href="">Enlace1</a></li>
-                <li><a href="">Enlace1</a></li>
-            </ul>
-        </div>
-
-    </header>
-
-    <main>
-        <!--
-        <aside>
-            <h3>Menu</h3>
-            <ul>
-                <li><a href="">Enlace1</a></li>
-                <li><a href="">Enlace1</a></li>
-                <li><a href="">Enlace1</a></li>
-                <li><a href="./pages/contact/contact.html">Enlace4</a></li>
-            </ul>
-        </aside>
-        -->
-        <section class="container">
-            <div class="banner-principal">
-                <h1></h1>
+        <div class="content">
+            <div class="descripcion">
+                <h1 class="animate pop">Ponerse en contacto</h1>
+                <p class="animate pop delay-1">¿Tienes curiosidad por el CBD? ¿Necesita ponerse en contacto con nosotros?</p>
+                <p class="animate pop delay-1">¿O simplemente quieres hacer un nuevo amigo?Envíanos un mensaje.</p>
             </div>
-            <div class="content">
-                <div class="descripcion">
-                    <p>
-                    </p>
+           
+            
+            <div class="wrapper">
+                <h2>Contact us</h2>
+                <div id="error_message">
+            
                 </div>
-                <div class="list-products">
-                    <div class="wrapper">
-                        <h2>Contact us</h2>
-                        <div id="error_message">
-                    
-                        </div>
-                        <form action="" id="myform" onsubmit="return validate();">
-                            <div class="input_field">
-                                <input type="text" placeholder="Name" id="name">
-                            </div>
-                            <div class="input_field">
-                                <input type="text" placeholder="Subject" id="subject">
-                            </div>
-                            <div class="input_field">
-                                <input type="text" placeholder="Phone" id="phone">
-                            </div>
-                            <div class="input_field">
-                                <input type="text" placeholder="Email" id="email">
-                            </div>
-                            <div class="input_field">
-                                <textarea placeholder="Message" id="message">
-                                        </textarea>
-                            </div>
-                            <div class="btn">
-                                <input type="submit">
-                            </div>
-                        </form>
+                <form action="" id="myform" onsubmit="return validate();">
+                    <div class="input_field">
+                        <input type="text" placeholder="Name" id="name">
                     </div>
-                    <script src="/src/index.js"></script>
-                </div>
+                    <div class="input_field">
+                        <input type="text" placeholder="Subject" id="subject">
+                    </div>
+                    <div class="input_field">
+                        <input type="text" placeholder="Phone" id="phone">
+                    </div>
+                    <div class="input_field">
+                        <input type="text" placeholder="Email" id="email">
+                    </div>
+                    <div class="input_field">
+                        <textarea placeholder="Message" id="message"></textarea>
+                    </div>
+                    <div class="btn">
+                        <input type="submit">
+                    </div>
+                </form>
             </div>
+            <script src="/src/index.js"></script>
+        </div>
+        <div class="banner-end">
+            <div id="ubicacion-mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1511.9854477020538!2d-73.999057!3d40.71865719999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25989c2eefc67%3A0x82c42cfab57cda11!2sLily&#39;s%20Vegan%20Pantry!5e0!3m2!1ses!2ses!4v1710194930229!5m2!1ses!2ses" 
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div id="redes-sociales">
+                <a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a>
+                <a href="https://twitter.com/?lang=es"><i class="fa fa-twitter" aria-hidden="true"></i> Twiter</a>
+                <a href="https://www.facebook.com/?locale=es_ES"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a>
+            </div>
+        </div>
 
-        </section>
-        <!-- En esta parte utilizaremos iframe-->
-    </main>
-    <footer>
-        <h3>Footer</h3>
-    </footer>
+    </div>
 </body>
 
 </html>
