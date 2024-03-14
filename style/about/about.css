@@ -47,7 +47,7 @@ div#about div.content {
     text-align: center;
 }
 
-div#about div.content div.descripcion {
+div#about div.content div.descripcion,  div#about div.content #team{
     padding: 50px 10%;
     font-size: 20px;
 }
@@ -203,16 +203,20 @@ div#about div.banner-end div#redes-sociales a {
 
 div#imgTeam{
     display: flex;
+    justify-content: space-between;
 }
 
 
 div#imgTeam img {
     border-radius: 50%;
     width: 30%;
-    margin-left: 35%;
+    /* margin-left: 35%; */
     filter: grayscale(100%);
     display: flex;
     
+    width: 150px;
+    height: 150px;
+    flex-basis: 30%;
 }
 
 div#imgTeam img:hover {
@@ -226,6 +230,7 @@ div#imgTeam img:hover {
     flex-direction: column;
     align-content: center;
 
+    align-items: center;
 }
 
 .animate {
