@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+
 *{
     box-sizing: border-box;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
+    font-family: "Josefin Sans", sans-serif;
 }
 body{
     /* height: 100vh; */
@@ -106,6 +109,10 @@ header div#carro-compra span{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.tiembla{
+    animation: tiembla 0.2s;
 }
 
 @keyframes tiembla{

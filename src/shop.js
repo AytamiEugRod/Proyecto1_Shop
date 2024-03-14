@@ -86,11 +86,23 @@ function addToCart(products, id) {
     const cartProduct = cart.find((product) => product.id === id);
     if (cartProduct != undefined && product.id == cartProduct.id) {
         incrItem(id);
+        
     } else {
         cart.unshift(product);
     }
     updateCart();
     getTotal(cart);
+
+    // Añadido para ocultar mensaje de carro vacío
+    document.querySelector('div#shop div#moval-cart .cart p#no-items-carro').style.display = "none";
+    // Añadido para mostrar boton
+    document.querySelector('div#shop div#moval-cart .cart button.buy-btn').classList.remove("disabled");
+    document.querySelector('div#shop div#moval-cart .cart button.buy-btn').type = "submit";
+    // Añadido para añadir animación de vibración al icono del carro
+    parent.document.querySelector('header div#carro-compra i').classList.add('tiembla');
+    setTimeout(function(){
+        parent.document.querySelector('header div#carro-compra i').classList.remove('tiembla');
+    }, 200);
 };
 
 function getTotal(cart) {
@@ -144,4 +156,12 @@ function deleteItem(id) {
     }
     updateCart();
     getTotal(cart);
+
+    // Añadido para mostrar mensaje de carro vacío
+    console.log("eliminado ",cart.length )
+    if(cart.length == 0){
+        document.querySelector('div#shop div#moval-cart .cart p#no-items-carro').style.display = "block";
+        document.querySelector('div#shop div#moval-cart .cart button.buy-btn').type = "button";
+        document.querySelector('div#shop div#moval-cart .cart button.buy-btn').classList.add("disabled");
+    }
 }
