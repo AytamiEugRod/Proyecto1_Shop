@@ -210,17 +210,26 @@ div#imgTeam{
     display: flex;
 }
 
+
 div#imgTeam img {
     border-radius: 50%;
     width: 30%;
-    margin-right: 50px;
+    margin-left: 165px;
     filter: grayscale(100%);
     display: flex;
     
 }
 
-div#imgTeam img:hover{
+div#imgTeam img:hover {
     filter: grayscale(0%);
+
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 
 }
 
@@ -271,3 +280,4 @@ div#imgTeam img:hover{
 .delay-3 {
     animation-delay: 0.8s;
 }
+
