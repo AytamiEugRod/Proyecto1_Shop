@@ -5,9 +5,9 @@ window.onload = function(){
         document.querySelector("div#shop div#moval-cart").classList.toggle('desactivo');
     })
 
-    // document.querySelector('#moval-cart').addEventListener('click',(e) => {
-    //     e.currentTarget.classList.add('desactivo')
-    // });
+    document.querySelector('#moval-cart #background-cart').addEventListener('click',(e) => {
+        e.currentTarget.parentElement.classList.add('desactivo')
+    });
 };
 
 const numbItemsCarroCompra = parent.document.querySelector("div#carro-compra span");

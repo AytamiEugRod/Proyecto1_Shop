@@ -88,6 +88,9 @@ header div#carro-compra{
     right: 30px;
     cursor: pointer;
 }
+header div#carro-compra:hover i{
+    animation: tiembla 0.2s;
+}
 header div#carro-compra span{
     position: absolute;
     top: -10px;
@@ -103,6 +106,14 @@ header div#carro-compra span{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@keyframes tiembla{
+    0%  { transform:rotateZ(0deg); }
+    25%  { transform:rotateZ(10deg); }
+    50% { transform:rotateZ( 0deg); }
+    75% { transform:rotateZ( -10deg); }
+    100%{ transform:rotateZ( 0deg); }
 }
 
 main{

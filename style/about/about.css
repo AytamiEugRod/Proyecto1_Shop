@@ -76,6 +76,7 @@ div#about div.content div.descript-product.light-descript-product>div.info-produ
 div#about div.content div.descript-product.dark-descript-product {
     background-color: rgb(0 0 0 / 50%);
     padding: 50px 10% 50px 3%;
+    color: #f6f2d6;
 }
 
 div#about div.content div.descript-product.dark-descript-product>div.info-product>p {
