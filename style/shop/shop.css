@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+
 * {
     box-sizing: border-box;
     /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: "Josefin Sans", sans-serif;
 }
 html, body{
     height: 100%;
@@ -18,7 +21,7 @@ div#shop{
 
     letter-spacing: 1px;
     line-height: 25px;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
 }
 
 div#shop div.banner-principal{
@@ -249,6 +252,13 @@ div#shop div#moval-cart div.cart .buy-btn {
 }
 div#shop div#moval-cart div.cart .buy-btn:hover{
     transform: scale(1.04);
+}
+div#shop div#moval-cart div.cart .buy-btn.disabled{
+    filter: brightness(0.5);
+}
+div#shop div#moval-cart div.cart .buy-btn.disabled{
+    transform: scale(1);
+    cursor: no-drop;
 }
 
 @media only screen and (min-width: 1920px) {
