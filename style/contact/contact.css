@@ -29,7 +29,7 @@ div#box div.banner-principal{
     height: 60vh;
 
     padding-top: 8%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("/assets/main/banner5.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("/assets/main/banner6.webp");
     color: #FFF;
 
     background-size: cover;
@@ -127,14 +127,6 @@ div#imgTeam img {
     animation-delay: 0.8s;
 }
 
-/************************************************************************/
-
-div#box input[type=text],
-div#box select,
-div#box textarea {
-}
-
-
 .wrapper {
     width: 100%;
     background: #fff;
@@ -221,4 +213,26 @@ div#box div.descripcion p{
     text-align: center;
     font-size: 14px;
     transition: all 0.5s ease;
+}
+
+/***********************************/
+
+.form-Contact{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-contact{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.img-contact img{
+
+    width: 70%;
 }

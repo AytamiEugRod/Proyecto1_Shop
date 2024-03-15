@@ -17,7 +17,7 @@ const products = [
     { name: "Gofio Pérez Gil ", price: 1.55, id: 1, quantity: 1, description: "Millo (maíz) molido de tostado suave", image: "/assets/shop/gofio.webp" },
     { name: "Garden Alitas de Pollo", price: 3.45, id: 2, quantity: 1, description: "Alitas de pollo basadas en vegetales", image: "/assets/shop/alitas.webp" },
     { name: "Beyond Beef Carne picada", price: 4.85, id: 3, quantity: 1, description: "Preparado estilo carne picada y sabor medio/intenso", image: "/assets/shop/carne.webp" },
-    { name: "WholeSome lágrimas de carne", price: 6.05, id: 4, quantity: 1, description: "JustLikeBeef Preparado de judías imitando lágrimas de carne", image: "/assets/shop/carne2.webp" },
+    { name: "WholeSome trozos de carne", price: 6.05, id: 4, quantity: 1, description: "JustLikeBeef Preparado de judías imitando lágrimas de carne", image: "/assets/shop/carne2.webp" },
     { name: "Quorn Filete de carne", price: 5.49, id: 5, quantity: 1, description: "2 unidades de filetes proteína de soja y espesantes", image: "/assets/shop/carne3.webp" },
     { name: "GardeIn Tiras de pollo", price: 3.99, id: 6, quantity: 1, description: "Proteína de soja y vegetales imitando tiras de pollo, con salsa", image: "/assets/shop/chicken.webp" },
     { name: "Morrisons Tacos de pollo", price: 4.99, id: 7, quantity: 1, description: "Tacos de soja marinados con hierbas y especies ", image: "/assets/shop/chicken3.webp" },

@@ -29,7 +29,7 @@ div#about div.banner-principal {
     height: 60vh;
 
     padding-top: 8%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("/assets/main/banner5.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url("/assets/main/banner8.webp");
     color: #FFF;
 
     background-size: cover;
@@ -279,5 +279,11 @@ div#imgTeam img:hover {
 
 .delay-3 {
     animation-delay: 0.8s;
+}
+
+.text-block:hover{
+
+    text-size-adjust: 15px;
+
 }
 
